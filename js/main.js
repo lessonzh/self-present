@@ -5,25 +5,10 @@ var iStatus = 0;
 
 var imgData = [
 	'img/bg.jpg',
-	'img/bg1.jpg',
-	'img/banner03.jpg'
+	'img/bg1.jpg'
 ];
 
 
-for (var i = 0; i < imgData.length; i++) {
-	var oImg = new Image();
-	oImg.onload = function () {
-		iStatus++;
-		oSpan.innerHTML = Math.floor(iStatus / imgData.length * 100);
-		if (iStatus == imgData.length) {
-			oPreload.style.height = '0'
-			// 			setTimeout(function(){
-			// 				oPreload.remove()
-			// 			},1000)
-		}
-	}
-	oImg.src = imgData[i];
-}
 
 //获取案例
   $.ajax({
