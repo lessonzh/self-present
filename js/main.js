@@ -27,7 +27,7 @@ for (var i = 0; i < imgData.length; i++) {
 
 //获取案例
   $.ajax({
-	url:'http://192.168.23.193:3000/getDemo',
+	url:'http://111.230.210.32:3000/getDemo',
 	method:'get',
 	success:function(res){
 		if(res.code == 0 && res.data.length){
